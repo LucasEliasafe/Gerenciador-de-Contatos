@@ -12,5 +12,10 @@ public class ContactManager {
         contacts.add(contact);
     }
 
+    public void removeContact(String name) {
+        contacts.removeIf(contact -> contact.getName().equalsIgnoreCase(name));
+    }
+
+
 
 }
