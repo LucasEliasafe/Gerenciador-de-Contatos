@@ -25,6 +25,8 @@ public class ContactManager {
         return null;
     }
 
-    public
+    public List<Contact> listContacts() {
+        return new ArrayList<>(contacts);
+    }
 
 }
