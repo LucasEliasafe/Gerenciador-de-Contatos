@@ -16,6 +16,15 @@ public class ContactManager {
         contacts.removeIf(contact -> contact.getName().equalsIgnoreCase(name));
     }
 
+    public Contact searchContact(String name) {
+        for (Contact contact : contacts) {
+            if (contact.getName().equalsIgnoreCase(name)) {
+                return contact;
+            }
+        }
+        return null;
+    }
 
+    public
 
 }
